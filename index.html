@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dicoding Submission | KimiNoNawa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="images/hdlogo.png" class="logo" />
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <img src="images/nav_open.png" alt="Menu" />
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#character">Character</a></li>
+          <li><a href="#movie">Movie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="body">
+      <div id="home" class="home">
+        <img src="images/logo1.png" class="title" />
+        <audio id="audioPlayer" loop>
+          <source src="images/KimiNoNawa.mp3" type="audio/mpeg" />
+          <source src="images/KimiNoNawa.ogg" type="audio/ogg" />
+        </audio>
+        <a
+          href="#story"
+          onclick="document.getElementById('audioPlayer').play()"
+        >
+          Go to Story
+        </a>
+      </div>
+
+      <div class="content">
+        <article id="story" class="card">
+          <header>
+            <h2>Story</h2>
+          </header>
+          <p>
+            Kimi no Na wa. (君の名は。) atau Your Name adalah film animasi
+            Jepang yang dirilis pada tahun 2016. Film ini disutradarai oleh
+            Makoto Shinkai dan diproduksi oleh CoMix Wave Films. Film ini
+            menceritakan tentang dua orang remaja, Mitsuha Miyamizu dan Taki
+            Tachibana, yang secara misterius dapat bertukar tubuh. Mitsuha
+            tinggal di desa fiksi bernama Itomori di Prefektur Gifu, sedangkan
+            Taki tinggal di Tokyo. Mereka berdua tidak pernah bertemu satu sama
+            lain, tetapi mereka dapat berkomunikasi melalui catatan yang mereka
+            tinggalkan di ponsel atau di buku catatan. Mitsuha dan Taki berusaha
+            untuk mengetahui penyebab pertukaran tubuh mereka dan mengatasi
+            masalah yang mereka hadapi.
+          </p>
+        </article>
+
+        <article id="character" class="card">
+          <header>
+            <h2>Character</h2>
+          </header>
+          <p>
+            <strong>Mitsuha Miyamizu</strong> adalah seorang gadis sekolah
+            menengah atas yang tinggal di desa fiksi bernama Itomori di
+            Prefektur Gifu. Dia tinggal bersama dengan adik perempuannya,
+            Yotsuha Miyamizu, dan nenek mereka. Mitsuha adalah putri dari kepala
+            kuil Shinto di desa tersebut. Dia merasa bosan dengan kehidupannya
+            di desa dan ingin pindah ke Tokyo. Mitsuha bertukar tubuh dengan
+            Taki Tachibana, seorang siswa SMA di Tokyo, setiap beberapa hari
+            sekali. Mitsuha dan Taki berusaha untuk mengetahui penyebab
+            pertukaran tubuh mereka dan mengatasi masalah yang mereka hadapi.
+          </p>
+        </article>
+
+        <article id="movie" class="card">
+          <header>
+            <h2>movie</h2>
+          </header>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3KR8_igDs1Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div class="aside-image">
+          <img src="images/aside.jpg" alt="Kimi No Nawa" />
+        </div>
+        <div class="aside-item">
+          <h3>Follow me</h3>
+          <ul>
+            <li>
+              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+              Facebook
+            </li>
+            <li>
+              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+              Instagram
+            </li>
+            <li>
+              <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+              Twitter
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>
+        <p>&copy; 2021 Your Name. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
