@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -214,13 +220,8 @@ a:hover img {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: auto;
-  padding: 20px;
-  margin: 20px;
-  justify-content: space-between;
-  width: 70%;
-  margin-top: 0px;
+  flex: 3;
 }
 
 .content h1 {
@@ -252,8 +253,6 @@ a:hover img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-bottom: 10px;
-  padding: 15px;
-  margin-top: 10px;
 }
 .character-container {
   display: flex;
@@ -408,7 +407,6 @@ article {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
   max-width: 100%;
 }
 
@@ -428,11 +426,8 @@ article p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
   padding: 10px;
 }
 
@@ -461,16 +456,12 @@ article p {
   transform: scale(1.1);
 }
 
-aside {
-  position: absolute;
-  right: 0;
-  width: 25%;
+.container {
+  display: flex;
   padding: 20px;
+  gap: 20px;
 }
 
-.profile-aside {
-  justify-content: center;
-}
 figcaption {
   text-align: center;
   font-size: 1rem;
@@ -480,10 +471,15 @@ figcaption {
   font-weight: bold;
 }
 
+aside {
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .profile-aside img {
   display: block;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 200px;
   height: auto;
 }
 
@@ -501,10 +497,10 @@ figcaption {
   color: #094c9e;
 }
 
-main::after {
-  content: "";
-  display: table;
-  clear: both;
+@media screen and (max-width: 1013px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -673,5 +669,34 @@ footer a:hover {
 
   article {
     padding: 10px;
+  }
+}
+
+.character-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.character-item {
+  flex: 1;
+}
+
+p.character-item {
+  text-align: center;
+}
+
+.character-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 940px) {
+  .character-items {
+    flex-direction: column;
+  }
+
+  p.character-item {
+    text-align: justify;
   }
 }
