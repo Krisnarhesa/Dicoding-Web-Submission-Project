@@ -6,13 +6,26 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Dicoding Submission | KimiNoNawa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Dicoding Submission | Your name.</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img src="images/hdlogo.png" class="logo" />
+        <a
+          class="logo"
+          href="https://github.com/Krisnarhesa/Dicoding-Web-Submission-Project"
+        >
+          <img src="images/hdlogo.png" />
+        </a>
         <div class="menu-toggle" onclick="toggleMenu()">
           <img src="images/nav_open.png" alt="Menu" />
         </div>
@@ -25,62 +38,70 @@
       </nav>
     </header>
 
-    <main class="body">
+    <main>
       <div id="home" class="home">
-        <img src="images/logo1.png" class="title" />
+        <img src="images/logo1.png" alt="yourname" class="title-logo" />
         <audio id="audioPlayer" loop>
-          <source src="images/KimiNoNawa.mp3" type="audio/mpeg" />
-          <source src="images/KimiNoNawa.ogg" type="audio/ogg" />
+          <source src="images/Katawaredoki.mp3" type="audio/mpeg" />
         </audio>
         <a
           href="#story"
+          class="button"
           onclick="document.getElementById('audioPlayer').play()"
         >
-          Go to Story
+          <i class="fas fa-play"></i> Begin Story
         </a>
       </div>
 
       <div class="content">
         <article id="story" class="card">
-          <header>
-            <h2>Story</h2>
-          </header>
+          <h2>STORY</h2>
           <p>
-            Kimi no Na wa. (君の名は。) atau Your Name adalah film animasi
-            Jepang yang dirilis pada tahun 2016. Film ini disutradarai oleh
-            Makoto Shinkai dan diproduksi oleh CoMix Wave Films. Film ini
-            menceritakan tentang dua orang remaja, Mitsuha Miyamizu dan Taki
-            Tachibana, yang secara misterius dapat bertukar tubuh. Mitsuha
-            tinggal di desa fiksi bernama Itomori di Prefektur Gifu, sedangkan
-            Taki tinggal di Tokyo. Mereka berdua tidak pernah bertemu satu sama
-            lain, tetapi mereka dapat berkomunikasi melalui catatan yang mereka
-            tinggalkan di ponsel atau di buku catatan. Mitsuha dan Taki berusaha
-            untuk mengetahui penyebab pertukaran tubuh mereka dan mengatasi
-            masalah yang mereka hadapi.
+            <strong>Kimi no Na wa. (君の名は。)</strong> atau Your Name adalah
+            film animasi Jepang yang dirilis pada tahun 2016. Film ini
+            disutradarai oleh Makoto Shinkai dan diproduksi oleh CoMix Wave
+            Films. Film ini menceritakan tentang dua orang remaja, Mitsuha
+            Miyamizu dan Taki Tachibana, yang secara misterius dapat bertukar
+            tubuh. Mitsuha tinggal di desa fiksi bernama Itomori di Prefektur
+            Gifu, sedangkan Taki tinggal di Tokyo. Mereka berdua tidak pernah
+            bertemu satu sama lain, tetapi mereka dapat berkomunikasi melalui
+            catatan yang mereka tinggalkan di ponsel atau di buku catatan.
+            Mitsuha dan Taki berusaha untuk mengetahui penyebab pertukaran tubuh
+            mereka dan mengatasi masalah yang mereka hadapi.
           </p>
         </article>
 
         <article id="character" class="card">
-          <header>
-            <h2>Character</h2>
-          </header>
-          <p>
-            <strong>Mitsuha Miyamizu</strong> adalah seorang gadis sekolah
-            menengah atas yang tinggal di desa fiksi bernama Itomori di
-            Prefektur Gifu. Dia tinggal bersama dengan adik perempuannya,
-            Yotsuha Miyamizu, dan nenek mereka. Mitsuha adalah putri dari kepala
-            kuil Shinto di desa tersebut. Dia merasa bosan dengan kehidupannya
-            di desa dan ingin pindah ke Tokyo. Mitsuha bertukar tubuh dengan
-            Taki Tachibana, seorang siswa SMA di Tokyo, setiap beberapa hari
-            sekali. Mitsuha dan Taki berusaha untuk mengetahui penyebab
-            pertukaran tubuh mereka dan mengatasi masalah yang mereka hadapi.
-          </p>
+          <h2>CHARACTER</h2>
+          <div class="character-container">
+            <div class="character">
+              <img src="images/chara_mitsuha.png" alt="Mitsuha Miyamizu" />
+              <p>
+                <strong>Mitsuha Miyamizu</strong> Seorang gadis SMA yang tinggal
+                di kota pedesaan jauh di pegunungan. Ayahnya, yang merupakan
+                walikota, telah meninggalkan rumah, dan dia tinggal bersama adik
+                perempuannya, seorang siswa sekolah dasar, dan neneknya.
+                Meskipun dia memiliki kepribadian yang jujur, dia muak dengan
+                adat istiadat kuil keluarganya dan kampanye pemilihan ayahnya.
+                Dia dan teman-temannya menyesali kota kecil dan sempit itu dan
+                mendambakan kehidupan glamor di Tokyo.
+              </p>
+            </div>
+            <div class="character">
+              <img src="images/chara_taki.png" alt="Taki Tachibana" />
+              <p>
+                <strong>Taki Tachibana</strong> Seorang anak SMA yang tinggal di
+                pusat kota Tokyo. Dia menghabiskan hari-harinya dengan bahagia
+                bersama teman-temannya dan bekerja paruh waktu di sebuah
+                restoran Italia. Dia diam-diam naksir rekannya Okudera-senpai.
+                Saya tertarik pada arsitektur dan seni.
+              </p>
+            </div>
+          </div>
         </article>
 
         <article id="movie" class="card">
-          <header>
-            <h2>movie</h2>
-          </header>
+          <h2>MOVIE</h2>
           <iframe
             width="560"
             height="315"
@@ -92,44 +113,61 @@
           ></iframe>
         </article>
       </div>
-      <aside class="sidebar">
-        <div class="aside-image">
-          <img src="images/aside.jpg" alt="Kimi No Nawa" />
-        </div>
-        <div class="aside-item">
-          <h3>Follow me</h3>
-          <ul>
-            <li>
-              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-              Facebook
-            </li>
-            <li>
-              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
-              Instagram
-            </li>
-            <li>
-              <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
-              Twitter
-            </li>
-          </ul>
-        </div>
+
+      <aside>
+        <article class="profile-aside">
+          <section>
+            <h3>Author</h3>
+            <figure>
+              <img src="images/Makoto.jpg" alt="author" />
+              <figcaption>Makoto Shinkai</figcaption>
+            </figure>
+            <p>
+              <strong>Makoto Shinkai</strong>, lahir pada tahun 1973 di
+              Prefektur Nagano, adalah salah satu sutradara anime terkenal
+              Jepang. Ia memulai kariernya pada tahun 2002 dengan karya pendek
+              "Voices of a Distant Star," yang diproduksinya sendiri. Karya ini
+              meraih berbagai penghargaan, termasuk "Outstanding Award in the
+              Public Submission Category" di Tokyo International Anime Fair.
+              Film panjang pertamanya, "The Place Promised in Our Early Days"
+              (2004), memenangkan Penghargaan Film Animasi pada Kompetisi Film
+              Mainichi ke-59, mengalahkan film-film blockbuster pada saat itu.
+              Pada tahun 2007, Shinkai merilis "5 Centimeters Per Second," yang
+              memenangkan "Best Animation Award" di Asia Pacific Film Festival
+              dan "Lancia Platinum Grand Prize" di Future Film Festival di
+              Italia. Pada tahun 2011, Shinkai memperluas dunianya dengan
+              "Children Who Chase Lost Voices," yang memenangkan Penghargaan
+              Keunggulan di Golden Horn Award pada Festival Animasi
+              Internasional China. Ia juga menerima surat penghargaan dari
+              Kantor Strategi Nasional Jepang pada tahun 2012 sebagai figur yang
+              membawa dampak global bagi Jepang. Kesuksesan terbesarnya datang
+              dengan "The Garden of Words" (2013), yang memenangkan Grand Prix
+              di Festival Film Animasi Internasional Stuttgart di Jerman. Pada
+              tahun yang sama, ia dianugerahi Shinmae Selection Award. Shinkai
+              kini diakui sebagai pelatih generasi baru animator dan terus
+              dihormati di Jepang maupun internasional.
+            </p>
+          </section>
+        </article>
       </aside>
+      <div class="silent-sound" id="silentSoundDiv">
+        <img src="images/silentsound.png" id="silentIcon" alt="top-button" />
+        <img src="images/unsilent.png" id="unsilentIcon" alt="top-button" />
+      </div>
+      <div class="top-page">
+        <img src="images/pagetop.png" alt="top-button" />
+      </div>
     </main>
 
     <footer>
       <div>
-        <p>&copy; 2021 Your Name. All rights reserved.</p>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
+        <p>&copy; Krisna Rhesa | 2024 Your Name.</p>
+        <a
+          href="https://www.linkedin.com/in/putu-krisna-rhesa-pradnyana-b05a60256/"
+          >My Linkedin</a
+        >
       </div>
     </footer>
-    <script>
-      function toggleMenu() {
-        const navbar = document.querySelector(".navbar");
-        navbar.classList.toggle("active");
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
